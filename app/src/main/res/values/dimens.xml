@@ -2,5 +2,6 @@
 <resources>
     <dimen name="layout_margin">16dp</dimen>
     <dimen name="font_size">20sp</dimen>
-    <dimen name="layout_padding">8dp</dimen>
+    <dimen name="layout_padding">16dp</dimen>
+    <dimen name="bio_line_spacing">1.2</dimen>
 </resources>

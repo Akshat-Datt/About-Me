@@ -1,23 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/tv_myName"
+        style="@style/NameStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="@string/my_name"
-        style="@style/NameStyle" />
+        android:text="@string/my_name" />
 
     <ImageView
         android:id="@+id/iv_starImage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:contentDescription="@string/yellow_star"
-        android:src="@android:drawable/btn_star_big_on"/>
+        android:src="@android:drawable/btn_star_big_on"
+        android:paddingTop="@dimen/layout_padding"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/layout_padding"
+        android:paddingStart="@dimen/layout_padding"
+        android:paddingEnd="@dimen/layout_padding">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/NameStyle"
+            android:lineSpacingMultiplier="@dimen/bio_line_spacing"
+            android:text="@string/my_bio"/>
+
+    </ScrollView>
 
 </LinearLayout>

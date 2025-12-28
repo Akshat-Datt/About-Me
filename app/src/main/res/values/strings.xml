@@ -2,4 +2,13 @@
     <string name="app_name">About Me</string>
     <string name="my_name">Akshat Datt</string>
     <string name="yellow_star">Yellow Star</string>
+    <string name="my_bio">Hi My Name is Akshat Datt.
+    \n\n I love to play video games.
+    \n\nMostly PC Games like Ghost of Tsushima, God Of War, Call of Duty, Red Dead Redemption.
+    \n\n I am Software Developer, working in a SAAS company named "Crackle Technologies".
+        \n\nI work in different technologies, like Unity, Kotlin, and currently i am learning android Studio and Rust.
+        \n\nI practice problems on LeetCode as well.
+        \n\nI love to eat different kind of cuisines, my favorites are parantha and missi roti.
+        \n\nMy biggest supporters are my parents and the love of my life
+    </string>
 </resources>
