@@ -13,6 +13,15 @@
         android:layout_gravity="center_horizontal"
         android:text="@string/my_name" />
 
+    <EditText
+        android:id="@+id/et_nickName"
+        style="@style/NameStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/what_is_your_nickName"
+        android:inputType="text|textMultiLine"
+        android:textAlignment="center" />
+
     <ImageView
         android:id="@+id/iv_starImage"
         android:layout_width="match_parent"
