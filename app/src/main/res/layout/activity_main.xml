@@ -22,6 +22,23 @@
         android:inputType="text|textMultiLine"
         android:textAlignment="center" />
 
+    <Button
+        android:id="@+id/btn_submitNickName"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_nickName_text"
+        android:fontFamily="@font/roboto"/>
+
+    <TextView
+        android:id="@+id/tv_nickName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:visibility="gone"
+        style="@style/NameStyle"/>
+
     <ImageView
         android:id="@+id/iv_starImage"
         android:layout_width="match_parent"
