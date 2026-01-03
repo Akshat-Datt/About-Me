@@ -11,22 +11,25 @@ import com.unit.aboutme.databinding.ActivityMainBinding
 class MainActivity : ComponentActivity() {
 
     private lateinit var binding: ActivityMainBinding
+
+    private val myName : MyName = MyName("Akshat Datt")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
-
+        binding.myName = myName
         binding.btnSubmitNickName.setOnClickListener {
             addNickName(it)
         }
     }
 
     private fun addNickName(view: View){
-
-        binding.tvNickName.text = binding.etNickName.text
-        binding.etNickName.visibility = View.GONE
-        view.visibility = View.GONE
-        binding.tvNickName.visibility = View.VISIBLE
-
+        binding.apply {
+            myName?.nickName = etNickName.text.toString()
+            invalidateAll()
+            etNickName.visibility = View.GONE
+            view.visibility = View.GONE
+            tvNickName.visibility = View.VISIBLE
+        }
         val keyboardTouchPad = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
         keyboardTouchPad.hideSoftInputFromWindow(view.windowToken, 0)
     }
